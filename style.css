@@ -30,6 +30,8 @@ body {
   height: 50px;
   width: 100vw;
   background-color: #290644dd;
+  z-index: 999;
+
   position: sticky;
   top: 0;
 }
@@ -151,6 +153,16 @@ body {
   font-size: 0.7rem;
   font-weight: 800;
 }
+.hiddenDiv {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  background-color: #edecf0;
+}
+
+.hiddenDiv.active {
+  max-height: 700px;
+}
 
 section {
   display: flex;
@@ -167,6 +179,13 @@ section {
   min-height: 300px;
 }
 .info {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.infoTwo {
   line-height: 1.5;
   display: flex;
   justify-content: center;
@@ -332,6 +351,13 @@ section {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
+}
+.amountTwo {
+  flex: 4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin-left: 10px;
 }
 .jusqu {
@@ -472,6 +498,17 @@ section {
   flex: 17;
   padding: 5px 2rem;
 }
+.divideLeft {
+  display: flex;
+  align-items: center;
+  flex: 15;
+}
+.divideRight {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
 .info {
   display: flex;
   flex-direction: column;
@@ -518,7 +555,10 @@ section {
 }
 .wrapper {
   display: flex;
-  /* flex-direction: column; */
+}
+.wrapperTwo {
+  display: flex;
+  flex-direction: column;
 }
 .boxDataWrapper {
   padding: 0.5rem;
@@ -690,15 +730,78 @@ h1 {
   line-height: 1.5rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  max-height: 400px;
 }
-
-@media (max-width: 767px) {
-  html {
-    font-size: 14px;
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column;
+  }
+  .leftSec {
+    margin-bottom: 3rem;
+    margin-right: 0rem;
   }
 }
-
 @media (max-width: 900px) {
+  .ratings {
+    display: none;
+    visibility: none;
+  }
+  .info {
+    display: none;
+    visibility: none;
+  }
+  .detailsWrapTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 17;
+    padding: 5px 1rem;
+  }
+  .detailsWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 17;
+    padding: 5px 1rem;
+  }
+  .amount {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .amountTwo {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .company {
+    width: 350px;
+    height: 100px;
+    padding: 0.5rem;
+    flex: 0;
+  }
+  .buttons {
+    flex: 0;
+  }
+  .btn {
+    width: 225px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnTwo {
+    width: 225px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .divideLeft {
+    margin-bottom: 1rem;
+  }
   #srch {
     display: none;
     visibility: hidden;
@@ -736,5 +839,53 @@ h1 {
   }
   .oneWrap {
     flex-direction: column;
+  }
+}
+@media (max-width: 580px) {
+  .descSplit {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .txtBox {
+    margin: 1.5rem;
+  }
+  .leftSec {
+    margin-bottom: 3rem;
+    margin-right: 0rem;
+    min-width: 330px;
+  }
+  .rightSec {
+    margin-right: 0rem;
+    min-width: 330px;
+  }
+  .cat {
+    position: absolute;
+    width: 10rem;
+  }
+  .btn {
+    width: 125px;
+  }
+  .btnTwo {
+    width: 125px;
+  }
+  .detailsWrapTwo {
+    padding: 5px 0rem;
+  }
+  .jusqu {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+  .spin {
+    font-size: 0.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .company {
+    width: 200px;
   }
 }

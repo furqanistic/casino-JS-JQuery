@@ -1,15 +1,17 @@
 import { games } from './data.js'
 
-$(document).ready(function () {
-  function smoothScrollToSection(sectionId) {
-    const section = $('#' + sectionId)
-    if (section.length > 0) {
-      section[0].scrollIntoView({
+document.addEventListener('DOMContentLoaded', (event) => {
+  window.smoothScrollToSection = function (sectionId) {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({
         behavior: 'smooth',
       })
     }
   }
+})
 
+$(document).ready(function () {
   let isExpanded = false
 
   $('.read-more').click(function (event) {
@@ -72,28 +74,32 @@ function generateHTMLForGame(game, index) {
 
   return `
       <div class="detailsWrapTwo" style="background-color: ${game.bgclr};">
-        <img src=${game.imgLink} class="company" style="background-color: ${game.clr};">
-        <div class="amount" style="margin-left: 30px;">
-          <p class="jusqu">${game.percentage} ${game["jusqu'a"]}</p>
-          <p class="num">${game.amount}</p>
+      <div class="divideLeft">
+          <img src=${game.imgLink} class="company" style="background-color: ${game.clr};">
+          <div class="amount">
+            <p class="jusqu">${game.percentage} ${game["jusqu'a"]}</p>
+            <p class="num">${game.amount}</p>
+          </div>
+          <div class="amountTwo">
+            <p class="spin">FREE SPINS</p>
+            <p class="num">${game.spin_amount}</p>
+          </div>
+          <div class="info">
+            ${featuresHTML}
+          </div>
+          <div class="ratings">
+            <img src=${game.rating} alt="" class="rate">
+            <p class="ratedesc">Lira Ia revue</p>
+          </div>
         </div>
-        <div class="amount">
-          <p class="spin">FREE SPINS</p>
-          <p class="num">${game.spin_amount}</p>
-        </div>
-        <div class="info">
-          ${featuresHTML}
-        </div>
-        <div class="ratings">
-          <img src=${game.rating} alt="" class="rate">
-          <p class="ratedesc">Lira Ia revue</p>
-        </div>
+      <div class="divideRight">
         <div class="buttons">
-          <a href=${game.buttonLink} class="linki">
-            <button class="btn">Jouer</button>
-          </a>
-          <button class="btnTwo" id="slideButton-${index}">+Plus</button>
+        <a href=${game.buttonLink} class="linki">
+        <button class="btn">Jouer</button>
+        </a>
+        <button class="btnTwo" id="slideButton-${index}">+Plus</button>
         </div>
+      </div>
       </div>
       <div id="slideDiv-${index}" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out;">
             <div class="slideWrap">
@@ -101,7 +107,6 @@ function generateHTMLForGame(game, index) {
               <div class="box">
                 <p class="boxTitle">Infos Utiles</p>
                 <div class="boxDataWrapper">
-
                   <div class="boxData">
                     <div class="dataTile">Lancement: </div>
                     <div class="dataValue"> ${game.lancement}</div>
@@ -157,7 +162,7 @@ function generateHTMLForGame(game, index) {
                 <a href=${game.buttonLink} class="linki">
                   <button class="btnTwo">Lire la revue</button>
                 </a>
-                <a href=${game.buttonLink} class="linki">
+                <a href=${game.buttonLinkTwo} class="linki">
                   <button class="btnThree">Jouer</button>
                 </a>
    
@@ -189,4 +194,19 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
       accordionItemBody.style.maxHeight = 0
     }
   })
+})
+
+document.getElementById('plusBtn').addEventListener('click', function () {
+  let hiddenDiv = document.getElementById('slideDiv')
+  hiddenDiv.classList.toggle('active')
+})
+
+document.getElementById('plusBtnTwo').addEventListener('click', function () {
+  let hiddenDivTwo = document.getElementById('slideDivTwo')
+  hiddenDivTwo.classList.toggle('active')
+})
+
+document.getElementById('plusBtnThree').addEventListener('click', function () {
+  let hiddenDivThree = document.getElementById('slideDivThree')
+  hiddenDivThree.classList.toggle('active')
 })
