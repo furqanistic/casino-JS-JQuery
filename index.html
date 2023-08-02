@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="./images/icon.png"
+      type="image/x-icon"
+    />
+     <script defer type="module" src="script.js"></script>
+  <script defer type="module" src="data.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Casino en Ligne - Top Casinos en Ligne 2023</title>
+  </head>
+  <body id="top">
+    <div class="sticky-text" onclick="toggleSubCategory()">
+    FR <i class="fa-solid fa-chevron-right" style="margin-left: 10px;"></i>
+    
+  </div>
+    <div class="topBar">
+      <nav>
+        <div class="nav">
+          <input type="checkbox" id="nav-check" />
+          <div class="nav-header">
+            <img  src="./images/logo.png" class="nav-title"></img>
+          </div>
+          <div class="nav-links">
+            <a href="./index.html" target="">Casinos en ligne</a>
+            <a href="./index.html" target=""
+              >Bonus</a
+            >
+            <a
+              href="./index.html"
+              target=""
+              >Machines à sous</a
+            >
+            <a href="./index.html" target="">Blog</a>
+            <a href="./index.html" target=""
+              >Forum</a
+            >
+            <a href="./index.html" target=""
+              ><i class="fa-solid fa-magnifying-glass" id="srch"></i></a
+            >
+          </div>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div  class="content" >
+      <section>
+        <div class="leftSec">
+          <div class="info">
+            <div class="infoTop">
+              <h1 class="Heading">Le guide du casino en ligne</h1>
+            </div>
+            <div class="infoBottom">
+              <div class="infoBottomLeft">
+              <p class="desc">Si vous recherchez un casino en ligne fiable et avez besoin d'un guide pour trouver la perle rare, bienvenue sur SOS Casino. Au fil de ces pages, vous trouverez toutes les informations pertinentes pour une expérience de jeu en ligne sans soucis.
+                <br><br>
+              SOS Casino vous propose des revues objectives, des bonus exclusifs ainsi que des jeux gratuits. Sans oublier une communauté de joueurs passionnés. Rejoignez-nous sans plus attendre !</p>
+                <a class="read-more">+Plus</a>
+              </div>
+              <div class="infoBottomRight">
+                <img src="./images/cat.png" alt="" class="cat">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightSec">
+          <div class="rightSecWrap">
+           <h1 class="HeadingTwo">Top 3 Casinos</h1>
+           <div class="details">
+            <div class="detailsWrap" style="background-color: #edecf0;">
+              <img src="./images/e1.png" class="company" style="background-color: #530355;">
+              <div class="amount" >
+                <p class="jusqu">100% JUSQU'A</p>
+                <p class="num">500€</p>
+              </div>
+              <div class="amount">
+                <p class="spin">FREE SPINS</p>
+                <p class="num">20</p>
+              </div>
+              <div class="buttons">
+                <a href="www.fb.com" class="linki">
+                  <button class="btn">Jouer</button>
+                </a>
+                  <button class="btnTwo">+Plus</button>
+            
+              </div>
+            </div>
+            <div class="detailsWrap" >
+              <img src="./images/e2.png" class="company" style="background-color: #33776a;">
+              <div class="amount" >
+                <p class="jusqu">100% JUSQU'A</p>
+                <p class="num">300€</p>
+              </div>
+              <div class="amount">
+                <p class="spin">FREE SPINS</p>
+                <p class="num">25</p>
+              </div>
+              <div class="buttons">
+                <button class="btn">Jouer</button>
+                <button class="btnTwo">+Plus</button>
+              </div>
+            </div>
+            <div class="detailsWrap" style="background-color: #edecf0;">
+              <img src="./images/e3.png" class="company" style="background-color: #882b80;">
+              <div class="amount" >
+                <p class="jusqu">100% JUSQU'A</p>
+                <p class="num">500€</p>
+              </div>
+              <div class="amount">
+                <p class="spin">FREE SPINS</p>
+                <p class="num">100</p>
+              </div>
+              <div class="buttons">
+                <button class="btn">Jouer</button>
+                <button class="btnTwo">+Plus</button>
+              </div>
+            </div>
+            <div class="endBtn">
+              <button class="wideBtn"> Voir le classement</button>
+            </div>
+           </div>
+        
+          </div>
+        </div>
+      </section>
+      <div class="sec-2">
+        <h1 class="HeadingTwo">Meilleurs casinos en ligne 2023</h1>
+        <div class="buttonSet">
+           <div class="Lbutton" id="casinos" onclick="showGames('casinos')">
+          <input type="radio" class="hiddenRadio" name="casinoType" id="casinosRadio">
+          <label for="casinosRadio">Casinos</label>
+        </div>
+        <div class="Lbutton" id="nouveauxCasinos" onclick="showGames('nouveauxCasinos')">
+          <input type="radio" class="hiddenRadio" name="casinoType" id="nouveauxCasinosRadio">
+          <label for="nouveauxCasinosRadio">Nouveaux Casinos</label>
+        </div>
+        
+        </div>
+        <div id="gamesList">
+
+        </div>
+        <div class="AfterList">
+                  <p class="Heading">Choisir un casino en ligne fiable</p>
+        <p class="descTwin">Il existe une abondance de casinos en ligne. Il y en a tellement qu'on finit par être submergé sans savoir vers qui se tourner. Avec nos revues detaillées et notre communauté joueurs, vous avez toutes les cartes en main pour choisir le meilleur casino en ligne en français.
+        <br><br>
+        Nos revues se veulent objectives et ne manquent pas de souligner les détails peu ragoûtants que beaucoup de nos confrères préfèrent omettre. Grâce à SOS Casino, il est facile de choisir un casino en ligne fiable qui répond à vos exigences.</p>
+        </div>
+        <div class="InfoGround">
+        <p class="HeadingGround">Nos critiques de casino sont un atout précieux</p>
+        <p class="descTwin">En ce qui concerne les casinos en ligne, tous les guides comparatifs qui existent ne sont pas impartiaux. Loin s'en faut. En effet, certaines méthodes de notation utilisées laissent à désirer. L'équipe de SOS Casino est toujours du côté des joueurs et notre seul objectif est votre entière satisfaction.</p>
+
+        <p class="descTwin">Par conséquent, les casinos en ligne qui ont obtenu la distinction de figurer dans notre classement doivent répondre aux critères de sélection suivants :</p>
+        <p class="descB">1. Une licence, qui doit être délivrée par une juridiction fiable</p>
+
+        <p class="descTwin">C'est un gage de qualité car un site de casino régulé doit se soumettre à certaines contraintes s'il veut conserver sa licence. Pour vous épargner des délais de paiement inacceptables ou des annulations de gains injustifiées, SOS Casino privilégie les casinos dûment autorisés.</p>
+
+        <p class="descB">2. Un catalogue de jeux avec un grand choix</p>
+
+        <p class="descTwin">Un casino en ligne doit offrir un catalogue vaste et éclectique s'il veut attirer et satisfaire les joueurs. Quels sont les éditeurs qui offrent les meilleurs jeux de casino ? On peut citer des leaders du marché tels que NetEnt ou Play'n Go pour les machines à sous. Pour le casino en direct, Evolution Gaming fait figure de référence.</p>
+
+        <p class="descB">3. Des bonus et promotions oui, mais attention aux conditions</p>
+
+        <p class="descTwin">Les bonus connaissent un énorme succès auprès des joueurs. Mais ces offres promotionnelles ne sont pas toujours intéressantes, et c'est pour cette raison que nous examinons de près leurs clauses restrictives. Chacune de nos évaluations comprend une section sur les termes et conditions des bonus afin que personne ne soit pris au dépourvu.</p>
+
+        <p class="descB">4. En ce qui concerne les modes de paiement, le mot clé est la variété</p>
+
+        <p class="descTwin">Les dépôts et les retraits étant généralement effectués régulièrement, il est essentiel de disposer de méthodes de paiement fiables et variées. En plus des cartes Visa et Mastercard, un casino en ligne moderne se doit de proposer des méthodes alternatives. Les plus populaires sont les portefeuilles électroniques, les crypto monnaies ou encore les virements bancaires. En d'autres termes, ils doivent disposer de solutions qui garantissent des transactions rapides, discrètes et sécurisées.</p>
+
+        <p class="descB">5. Que demande le peuple ? Des paiements rapides !</p>
+
+        <p class="descTwin">Gagner n'est pas toujours facile - si c'était le cas, personne n'aurait besoin de travailler, n'est-ce pas ? N'oubliez pas que quelque chose vaut mieux que rien et, à cette fin, il existe l'option "retrait".</p>
+
+        <p class="descTwin">Le problème est que certains casinos ne sont pas très réactifs. Certains semblent même retarder les paiements, sachant que la plupart des joueurs finiront par perdre patience et annuler leurs demandes. Pour éviter que cela ne se produise, jouez sur des casinos offrant des paiements rapides.</p>
+
+        <p class="descB">6. Le programme de fidélité (ou programme VIP), une distinction qui est plus que méritée</p>
+
+        <p class="descTwin">Le programme VIP vise à récompenser le joueur pour sa fidélité en offrant de multiples avantages en fonction de son activité. Un joueur VIP pourra ainsi bénéficier de bonus exclusifs, de cadeaux d'anniversaire, d'invitations à divers événements, mais aussi un gestionnaire de compte personnel. Sur SOS Casino, vous pouvez découvrir les établissements qui vous feront vous sentir comme une personne très importante dès le premier instant.</p>
+
+        <p class="descB">7. Un service client de premier ordre</p>
+
+        <p class="descTwin">Il est essentiel pour les joueurs de disposer d'un service client disponible à tout moment. Ce sont des qualités que SOS Casino juge indispensables pour qu'un casino obtienne un bon score dans notre classement.</p>
+
+        <p class="descB">8. Un design et une interface qui plaisent à l'œil et plus encore</p>
+
+        <p class="descTwin">Lorsque l'on passe des heures à jouer devant un écran, il est normal d'accorder une importance particulière à l'interface de jeu. Sinon, les sessions de jeu finissent par être misérables. C'est pourquoi SOS Casino met en avant les plateformes qui présentent un design soigné et une interface simplifiée.</p>
+
+        </div>
+        <div class="AfterList">
+                  <p class="HeadingGround">Le casino en direct, le privilège de jouer avec un croupier sans quitter votre domicile</p>
+        <p class="descTwin">Le casino en direct est la solution parfaite pour ceux qui aiment l'adrénaline que l'on ressent dans un casino terrestre. La seule chose dont vous avez besoin, en plus de posséder évidemment un ordinateur ou un smartphone, est de disposer d'une connexion internet. Une prouesse technologique viable grâce aux caméras installées à des endroits stratégiques, et qui retransmettent en direct toutes les étapes du jeu.
+        <br><br>
+        Même les interactions humaines entre les joueurs et les croupiers sont recréées en temps réel via un chat en direct. Il vous suffit de choisir votre jeu de casino favori ainsi que la salle, et voilà !</p>
+        </div>
+        <div class="InfoGround">
+                  <p class="HeadingGround">Casino mobile : le luxe de pouvoir jouer n'importe où et n'importe quand</p>
+        <p class="descTwin">Il est loin le temps où jouer au casino était une aventure, surtout lorsqu'il n'y avait pas de casino terrestre à proximité. Avec l'arrivée des casinos en ligne il y a environ 20 ans, notre relation avec les jeux de hasard a complètement changé.
+        <br><br>
+        En effet, Il est désormais possible de jouer à des jeux de casino avec un appareil tenant dans le creux de la main.</p>
+        </div>
+        <div class="AfterList">
+                  <p class="HeadingGround">Les bonus et promotions des casinos en ligne</p>
+        <p class="descTwin">Il est rare qu'un joueur soit insensible aux bonus offerts par les casinos en ligne, et vous allez voir pourquoi. Ces promotions sont vraiment tentantes, car elles permettent de prolonger les sessions de jeu sans avoir à dépenser un centime de plus. En fait, il s'agit d'un critère de sélection primordial pour de nombreuses personnes. Malgré le fait qu'il existe différents types de bonus, ils se divisent en deux groupes :
+        <br><br>
+        🟥 Les bonus sans dépôt ou bonus gratuits, qui, comme leur nom l'indique, ne nécessitent aucun dépôt. Ils sont généralement offerts lors de l'inscription (en argent réel ou tours gratuits) pour attirer de nouveaux joueurs;<br>
+          🟥les bonus avec dépôt, attribués via un dépôt. Les bonus de rechargement et de cashback ou même les tours gratuits entrent dans cette catégorie.<br><br></p>
+          <p class="descTwin">
+            Mais ne vous faites pas d'illusions, car ces offres alléchantes sont souvent à double tranchant ! C'est pour cette raison que nous passons en revue les différents types de <a style="color: red;text-decoration: none; font-weight: bold;" href="https://www.sos-casino.com/bonus"> bonus casino </a> existants, en soulignant leurs aspects positifs et négatifs.
+          </p>
+        </div>
+   
+          <div class="descSplit">
+            <div class="descSplitWrap">
+              <p class="descBTwin">Bonus de bienvenue</p>
+              <p class="descTwin">Ce sont les "cartes de visite" des casinos en ligne et l'une de leurs plus grandes attractions. Il s'agit en général d'un bonus de premier dépôt, mais certains casinos étendent cette offre de bienvenue aux 3-4 premiers dépôts. De même, ils peuvent même inclure des tours gratuits avec votre ou vos premiers dépôts, une pratique de plus en plus courante.<br><br>
+                </p>
+              <p class="descBTwin">Bonus sans dépôt</p>
+              <p class="descTwin">
+                Ce bonus est offert sans que vous ayez à effectuer de dépôt en retour, ce qui explique sa popularité. Les casinos offrent souvent ce type de bonus aux nouveaux joueurs. Cependant, les bonus gratuits sont presque toujours soumis à une exigence de mise et les gains obtenus sont limités à un plafond maximum.<br>
+                </p>
+              <p class="descBTwin">Bonus cashback</p>
+              <p class="descTwin">
+                Un casino offre des bonus cashback aux joueurs pour les inciter à rester actifs au cas où ils subiraient des pertes consécutives. Le bonus cashback est appliqué aux pertes subies pendant une période donné et son pourcentage varie en fonction du niveau VIP du joueur. Le bonus cashback peut être versé soit en espèces et être retiré immédiatement, soit sous forme de solde de bonus avec playthrough.
+              </p> 
+            </div>
+            <div class="descSplitWrap">
+              <p class="descBTwin">Free spins</p>
+              <p class="descTwin">Les tours gratuits sont populaires auprès des joueurs de machines à sous. Ils peuvent être offerts gratuitement ou en échange d'un dépôt, dans le cadre d'une campagne promotionnelle. La plupart du temps, les gains obtenus grâce aux tours gratuits sont soumis à une exigence de mise. De même, le casino peut fixer au préalable une valeur maximale autorisée pour le retrait.</p>
+              <p class="descBTwin">Bonus sans conditions</p>
+              <p class="descTwin">
+                Ce sont les bonus les plus recherchés, car il n'y a pas de clause restrictive pour le joueur. Cela signifie que les gains peuvent être retirés immédiatement, quelle que soit leur valeur. Ce type d'offre est souvent réservé aux joueurs les plus assidus et à ceux qui ont un historique de longue date.<br><br>
+                </p>
+              <p class="descBTwin">Bonus de rechargement</p>
+              <p class="descTwin">
+                Le bonus de rechargement est attribué lorsque le joueur " recharge " son compte (c'est-à-dire qu'il effectue un dépôt). Et compte tenu du fait que ce bonus est exprimé en pourcentage, le montant crédité sera proportionnel au montant déposé. C'est une façon intéressante de booster son compte sans avoir à dépenser plus pour le faire. Toutefois, n'oubliez pas de toujours vérifier les conditions de mise associées
+              </p> 
+            </div>
+          </div>
+          <div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Pourquoi devrais-je faire confiance à SOS Casino ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Nous offrons des revues objectives des casinos en ligne français, afin que vous puissiez jouer sereinement et en toute sécurité. Ce site a été créé par des joueurs, pour les joueurs.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Est-il sûr de miser de l'argent sur un casino en ligne ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+       Si vous jouez sur l'un des casinos testé par l'équipe exigeante de SOS Casino et suivez nos conseils, la réponse est oui.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Comment savoir si un casino possède vraiment une licence ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Un casino certifié annoncera toujours son numéro de licence ou un lien vers celui-ci sur sa page d'accueil en bas de page.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Faut-il installer un logiciel pour jouer ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        L'installation d'un logiciel de jeu n'est pas nécessaire. Vous pouvez vous rendre directement sur le site web de votre choix depuis votre navigateur internet.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Quel type d'appareil puis-je utiliser pour jouer ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Grâce à la technologie HTML5, il est aujourd'hui possible de jouer depuis n'importe quel appareil connecté a internet en toute sécurité.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Quels types de jeux puis-je trouver sur un casino en ligne ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        La variété des jeux proposés dépend des partenariats avec les éditeurs, ces derniers évoluant sans cesse afin d'offrir les meilleurs jeux de casino. La plupart des sites de casino offrent des machines à sous, des jeux de table, du vidéo poker et des paris sportifs. Par ailleurs, une section casino en direct est maintenant devenue la norme.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Qu'est-ce qu'un jackpot progressif ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Les jeux en ligne qui offrent ce type de jackpot sont financés par toutes les mises effectuées dans les casinos partenaires. Cela explique les montants élevés des prix qu'atteignent les machines à sous telles que Mega Moolah, Mega Fortune, Beach Life, etc.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      <p class="faq">Devrais-je jouer avec un bonus ?</p>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Cela dépend des conditions qui varient selon les sites de jeu et les campagnes promotionnelles. C'est pourquoi il est crucial de lire attentivement les T&C respectives avant d'accepter un bonus.
+      </div>
+    </div>
+  </div>
+</div>
+</div>            
+<div class="InfoGround" style="background-color: #de394d;padding: 2rem; ">
+    <p class="HeadingGround" style="color: white;">SOS Casino et le jeu responsable</p>
+    <p class="descTwin" style="color: white;">Nous vous recommandons de jouer avec modération et bon sens. Choisissez uniquement les casinos en ligne qui pratiquent le jeu responsable et mettent en œuvre des mesures efficaces visant à lutter contre l'addiction.
+<br><br>
+Si vous jouez dans l'un des établissements listés sur SOS Casino, il vous sera plus facile de gérer ce type de situation. Et ce, grâce aux outils qui vous permettent de fixer des limites de dépôt et de limiter la durée des sessions de jeu. L'exclusion automatique est également possible pendant une certaine période le cas échéant.</p>
+    </div>
+        </div>
+     
+      </div>
+    </div>
+    <footer>
+<div class="footerWrap">
+  <div class="one">
+    <img src="./images/casino.svg" alt="" class="casino">
+      <p class="casinoName">© SOS Casino 2023</p>
+  </div>
+  <div class="oneOne" >
+    <b>
+      <a class="links">Populaire</a>
+    </b>
+    <a href="https://www.sos-casino.com/" class="links">Casinos en ligne</a>
+    <a href="https://www.sos-casino.com/bonus" class="links">Bonus casino</a>
+    <a href="https://www.sos-casino.com/machines-a-sous" class="links">Machines à sous</a>
+  </div>
+ 
+  <div class="oneOne">
+    <b>
+      <a class="links">Infos</a>
+    </b>
+    <a href="https://www.sos-casino.com/a-propos" class="links">A propos</a>
+    <a href="https://www.sos-casino.com/conditions" class="links">CGU</a>
+    <a href="https://www.sos-casino.com/confidentialite" class="links">Confidentialité</a>
+    <a href="https://www.sos-casino.com/contact" class="links">Contact</a>
+  </div>
+  <div class="two">
+    <div class="oneWrap">
+      <img src="./images/18.svg" alt="" class="eighteen">
+      <p class="eText">Les jeux d’argent et de hasard sont interdits aux mineurs</p>
+    </div>
+    <a class="eTextTwo" onclick="smoothScrollToSection('top')">Retour en haut de page ↑</a>
+  </div>
+</div>
+    </footer>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </body>
+</html>
