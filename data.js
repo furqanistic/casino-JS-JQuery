@@ -102,7 +102,8 @@ export const games = [
     lancement: 2019,
     licence: 'Curaçao',
     depotmin: '20€',
-    introduction: 'Welcome to Casino T!',
+    introduction:
+      'Un casino en ligne qui offre des bonus sans conditions de mise.',
     wagering: '0x', // Odd id, updated
   },
   {
@@ -187,7 +188,7 @@ export const games = [
     lancement: 2017,
     licence: 'Curaçao',
     depotmin: '10€',
-    introduction: 'Welcome to Casino T!',
+    introduction: `Lucky8 bénéficie de l'expérience d'un groupe bien ancré dans le secteur et ça s'en ressent.`,
     wagering: '40x', // Odd id, updated
   },
   {

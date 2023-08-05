@@ -16,15 +16,16 @@ $(document).ready(function () {
 
   $('.read-more').click(function (event) {
     event.preventDefault()
-    if (isExpanded) {
-      $('.desc').css('maxHeight', '160px')
+
+    let secondPara = $('#secondPara')
+
+    if (secondPara.is(':visible')) {
+      secondPara.slideUp(300)
       $(this).text('+Plus')
     } else {
-      $('.desc').css('maxHeight', $('.desc')[0].scrollHeight + 'px')
-      $(this).text('-Minus')
+      secondPara.slideDown(300)
+      $(this).text('-Moins')
     }
-
-    isExpanded = !isExpanded
   })
 
   window.showGames = function (type) {
@@ -76,7 +77,7 @@ function generateHTMLForGame(game, index) {
       <div class="detailsWrapTwo" style="background-color: ${game.bgclr};">
       <div class="divideLeft">
           <img src=${game.imgLink} class="company" style="background-color: ${game.clr};">
-          <div class="amount">
+          <div class="amount" style="margin-left:30px">
             <p class="jusqu">${game.percentage} ${game["jusqu'a"]}</p>
             <p class="num">${game.amount}</p>
           </div>
@@ -101,7 +102,7 @@ function generateHTMLForGame(game, index) {
         </div>
       </div>
       </div>
-      <div id="slideDiv-${index}" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out;">
+      <div class="hiddenDiv" id="slideDiv-${index}" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out;">
             <div class="slideWrap">
               <div class="wrapper">
               <div class="box">
