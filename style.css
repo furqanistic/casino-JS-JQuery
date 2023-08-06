@@ -205,10 +205,11 @@ section {
 }
 
 .Heading {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 800;
   color: #290644;
   text-align: left;
+  width: 100%;
 }
 .HeadingTwo {
   font-size: 2rem;
@@ -331,6 +332,12 @@ section {
   flex: 17;
   padding: 5px 2rem;
 }
+.detailsWrapTwo {
+  display: flex;
+  align-items: center;
+  flex: 17;
+  padding: 1rem 2rem;
+}
 
 .company {
   width: 120px;
@@ -394,7 +401,12 @@ section {
   font-weight: 800;
   margin-right: 0.5rem;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+.reWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btnTwo {
   all: unset;
@@ -411,6 +423,7 @@ section {
   text-decoration: none;
   color: white;
 }
+
 .endBtn {
   display: flex;
   justify-content: center;
@@ -432,8 +445,8 @@ section {
 .sec-2 {
   background-color: white;
   margin-top: 1rem;
-  margin: 0.4rem 0.5rem;
   max-width: 1200px;
+  padding-bottom: 1rem;
 }
 .buttonSet {
   display: flex;
@@ -489,14 +502,14 @@ section {
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
-.detailsWrapTwo {
-  display: flex;
-  align-items: center;
-  flex: 17;
 
-  padding: 1rem 2rem;
-}
 .divideLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 15;
+}
+.divideLeftTwo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -624,6 +637,7 @@ section {
   display: flex;
   justify-content: flex-end;
 }
+
 .footerWrap {
   max-width: 1200px;
   display: flex;
@@ -686,10 +700,10 @@ section {
 }
 
 .AfterList {
-  padding: 1rem;
+  padding: 2rem;
 }
 .InfoGround {
-  padding: 1rem;
+  padding: 2rem;
   background-color: #edecf0;
 }
 .HeadingGround {
@@ -772,16 +786,12 @@ h1 {
   .detailsWrapTwo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex: 17;
     padding: 5px 1rem;
   }
   .detailsWrap {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex: 17;
     padding: 5px 1rem;
   }
@@ -789,41 +799,70 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-left: 0px;
+    flex: 1;
   }
+
   .amountTwo {
     justify-content: center;
     align-items: center;
     margin-left: 0px;
+    flex: 1;
   }
   .company {
-    min-width: 250px;
-    height: 70px;
+    min-width: 92%;
+    height: 80px;
     align-self: center;
-    /* padding: 0.5rem; */
+    padding: 0rem;
     flex: 0;
+    margin-left: 0;
+  }
+  .divideRight {
+    width: 100%;
+    display: flex;
   }
   .buttons {
-    flex: 0;
+    width: 100%;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+  }
+  .linki {
+    flex: 1;
+    width: 100%;
   }
   .btn {
-    width: 225px;
-    min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 85%;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
   }
   .btnTwo {
-    width: 225px;
-    min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 85%;
   }
+
   .divideLeft {
     margin-bottom: 1rem;
-    justify-content: space-between;
-    align-items: default;
+    justify-content: center;
     width: 100%;
+    display: flex;
+    flex: 4;
+  }
+  .divideLeftTwo {
+    margin-bottom: 1rem;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex: 4;
+    margin-left: 35px;
+  }
+  .compa {
+    flex: 2;
   }
   #srch {
     display: none;
@@ -863,6 +902,15 @@ h1 {
   .oneWrap {
     flex-direction: column;
   }
+  .btn {
+    width: 75%;
+  }
+  .btnTwo {
+    width: 75%;
+  }
+  .company {
+    min-width: 85%;
+  }
 }
 @media (max-width: 580px) {
   .descSplit {
@@ -890,12 +938,7 @@ h1 {
     position: absolute;
     width: 10rem;
   }
-  .btn {
-    width: 125px;
-  }
-  .btnTwo {
-    width: 125px;
-  }
+
   .detailsWrapTwo {
     padding: 5px 0rem;
   }
@@ -908,7 +951,18 @@ h1 {
     font-weight: 400;
     text-transform: uppercase;
   }
-  .company {
-    width: 200px;
+  .btn {
+    width: 70%;
+  }
+  .btnTwo {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .btn {
+    width: 67%;
+  }
+  .btnTwo {
+    width: 67%;
   }
 }

@@ -75,9 +75,11 @@ function generateHTMLForGame(game, index) {
 
   return `
       <div class="detailsWrapTwo" style="background-color: ${game.bgclr};">
-      <div class="divideLeft">
-          <img src=${game.imgLink} class="company" style="background-color: ${game.clr};">
-          <div class="amount" style="margin-left:30px">
+      <div class="divideLeft" style="margin-left:32px">
+        <div class="compa" >
+            <img src=${game.imgLink} class="company" style="background-color: ${game.clr};">
+        </div>
+          <div class="amount" >
             <p class="jusqu">${game.percentage} ${game["jusqu'a"]}</p>
             <p class="num">${game.amount}</p>
           </div>
@@ -98,7 +100,9 @@ function generateHTMLForGame(game, index) {
         <a href=${game.buttonLink} class="linki">
         <button class="btn">Jouer</button>
         </a>
-        <button class="btnTwo" id="slideButton-${index}">+Plus</button>
+        <div href="" class="linki">
+          <button class="btnTwo" id="slideButton-${index}">+Plus</button>
+        </div>
         </div>
       </div>
       </div>
@@ -160,12 +164,14 @@ function generateHTMLForGame(game, index) {
               <hr class="line">
             </div>
             <div class="reviewBox">
+            <div class="reWrap">
                 <a href=${game.buttonLink} class="linki">
-                  <button class="btnTwo">Lire la revue</button>
+                <button class="btnTwo">Lire la revue</button>
                 </a>
                 <a href=${game.buttonLinkTwo} class="linki">
-                  <button class="btnThree">Jouer</button>
+                <button class="btnThree">Jouer</button>
                 </a>
+            </div>
    
             </div>
           </div>
